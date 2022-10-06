@@ -3,6 +3,9 @@ package personnages;
 public class Romain {
 	private String nom;
 	private int force;
+	private Equipement[] equipement=new Equipement[2];
+	private int nbEquipement=0;
+	
 
 	public Romain(String nom, int force) {
 		this.nom = nom;
@@ -33,6 +36,16 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 		assert forceDebut>force;
+	}
+	public void sEquiper(Equipement objet) {
+		switch (objet) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
 	}
 	public static void main(String[] args) {
 		Romain minus=new Romain("Minus",6);
