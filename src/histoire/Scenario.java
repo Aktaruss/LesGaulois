@@ -11,6 +11,7 @@ public class Scenario {
 		Druide panoramix = new Druide("Panoramix", 5, 10);
 		Romain minus = new Romain("minus", 6);
 		Romain milexcus = new Romain("milexcus", 8);
+		Musee louvre = new Musee();
 		panoramix.preparerPotion();
 		panoramix.booster(obelix);
 		panoramix.booster(asterix);
@@ -23,6 +24,8 @@ public class Scenario {
 		asterix.frapper(minus);
 		milexcus.parler("UN GAU... UN GAUGAU...");
 		asterix.frapper(milexcus);
+		asterix.faireUneDonnation(louvre,asterix);
+		System.out.println(louvre.extraireInstructionsCaml());
 
 	}
 
